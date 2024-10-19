@@ -1,6 +1,8 @@
+
 import java.util.Date;
 
 public class Book {
+
     public int id;
     public String title;
     public Author author;
@@ -16,5 +18,4 @@ public class Book {
         this.createdAt = new Date();
         this.updatedAt = new Date();
     }
-
 }

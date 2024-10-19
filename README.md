@@ -27,14 +27,12 @@
 
 ## 4. Library Class
 
-- [ ] Create the `Library` class with the following attributes:
-  - [ ] List of books (`List<Book>`)
-  - [ ] List of authors (`List<Author>`)
-  - [ ] List of loans (`List<Loan>`)
-- [ ] Implement methods:
-  - [ ] **Add book**: Method to add new books.
-  - [ ] **List available books**: Show only books marked as "available."
-  - [ ] **Loan a book**: Record a book loan, mark it as unavailable, and associate it with a user.
+- [x] Create the `Library` class with the following attributes:
+  - [x] List of books (`List<Book>`)
+- [x] Implement methods:
+  - [x] **Add book**: Method to add new books.
+  - [x] **List available books**: Show only books marked as "available."
+  - [x] **Loan a book**: Record a book loan, mark it as unavailable, and associate it with a user.
 
 ## 5. Book Management
 
