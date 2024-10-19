@@ -20,6 +20,11 @@ public final class Library {
     }
 
     public void getBooks() {
+        for (Book book : books) {
+            if (book.isAvailable) {
+                System.out.println(book.id + " - " + book.title + " by " + book.author.name);
+            }
+        }
     }
 
     public void loanABook(String bookID) {

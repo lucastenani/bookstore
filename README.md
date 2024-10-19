@@ -37,8 +37,8 @@
 ## 5. Book Management
 
 - [x] Define an initial set of books and authors directly in the class.
-- [ ] Implement functionality to:
-  - [ ] List all available books (only those that can be loaned).
+- [x] Implement functionality to:
+  - [x] List all available books (only those that can be loaned).
   - [ ] Loan a book: the user selects by `id`, enters their name, and the book is marked as loaned.
   - [ ] Display a success message after the loan.
 
