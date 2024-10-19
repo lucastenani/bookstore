@@ -40,20 +40,20 @@
 - [x] Implement functionality to:
   - [x] List all available books (only those that can be loaned).
   - [x] Loan a book: the user selects by `id`, enters their name, and the book is marked as loaned.
-  - [ ] Display a success message after the loan.
+  - [x] Display a success message after the loan.
 
 ## 6. User Interaction (Loop)
 
 - [x] Implement a loop in the console that:
   - [x] Asks the user if they want to see the available books.
-  - [ ] If the user answers **YES**:
-    - [ ] List available books.
-    - [ ] Allow the user to choose the book's `id`.
-    - [ ] Display a message confirming the loan.
-  - [ ] If the user answers **NO**:
-    - [ ] End the system with a closing message.
+  - [x] If the user answers **YES**:
+    - [x] List available books.
+    - [x] Allow the user to choose the book's `id`.
+    - [x] Display a message confirming the loan.
+  - [x] If the user answers **NO**:
+    - [x] End the system with a closing message.
 
 ## 7. Business Rules
 
-- [ ] Check if the book is available before allowing a loan.
-- [ ] Do not allow a book that has already been loaned to be loaned again until the program ends.
+- [x] Check if the book is available before allowing a loan.
+- [x] Do not allow a book that has already been loaned to be loaned again until the program ends.

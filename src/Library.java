@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public final class Library {
+public class Library {
 
     private List<Book> books = new ArrayList<>();
     public static int bookCounter = 0;
@@ -39,14 +39,20 @@ public final class Library {
             }
 
             if (selectedBook == null) {
+                System.out.println("The book with the entered ID was not found.");
                 return;
             }
 
             if (selectedBook.isAvailable) {
                 selectedBook.isAvailable = false;
+                System.out.println(selectedBook.title + " by " + selectedBook.author.name + " has been loaned.");
+            } else {
+                System.out
+                        .println(selectedBook.title + " by " + selectedBook.author.name + " is currently unavailable.");
             }
 
         } catch (NumberFormatException e) {
+            System.out.println("Invalid book ID: " + bookID);
         }
     }
 }
