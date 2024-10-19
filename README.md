@@ -39,7 +39,7 @@
 - [x] Define an initial set of books and authors directly in the class.
 - [x] Implement functionality to:
   - [x] List all available books (only those that can be loaned).
-  - [ ] Loan a book: the user selects by `id`, enters their name, and the book is marked as loaned.
+  - [x] Loan a book: the user selects by `id`, enters their name, and the book is marked as loaned.
   - [ ] Display a success message after the loan.
 
 ## 6. User Interaction (Loop)

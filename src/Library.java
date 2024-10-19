@@ -28,5 +28,25 @@ public final class Library {
     }
 
     public void loanABook(String bookID) {
+        Book selectedBook = null;
+
+        try {
+            for (Book book : books) {
+                if (book.id == Integer.parseInt(bookID)) {
+                    selectedBook = book;
+                    break;
+                }
+            }
+
+            if (selectedBook == null) {
+                return;
+            }
+
+            if (selectedBook.isAvailable) {
+                selectedBook.isAvailable = false;
+            }
+
+        } catch (NumberFormatException e) {
+        }
     }
 }
