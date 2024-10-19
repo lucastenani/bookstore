@@ -1,59 +1,32 @@
-# bookstore
+# Bookstore
 
-# Bookstore System Challenge Checklist
+## Project Description
 
-## 1. Initial Project Setup
+The `bookstore` project is a simple Java application that allows for the management of book loans in a library. The system enables users to view available books and register loans. The application is based on a user interaction loop, where users can query the list of books and record a loan by providing their name.
 
-- [x] Create a new Java project.
-- [x] Set up the project with the main classes mentioned (Book, Author, Library).
-- [x] Add data structures to store books, authors, and loans (ArrayList).
+## Functionality
 
-## 2. Book Class
+### Book Management
 
-- [x] Create the `Book` class with the following attributes:
-  - [x] `id` (Unique identifier)
-  - [x] `title` (Book title)
-  - [x] `author` (Object of type `Author`)
-  - [x] `available` (Boolean to indicate if it is available)
-  - [x] `registrationDate` (Date when the book was registered)
-  - [x] `lastUpdateDate` (Date when the book was last updated)
+- **Add a new book**: Including title and author (books are defined directly within the classes).
+- **List all available books**: Displaying only the books that are available for loan.
+- **Loan a book**: Allowing a user to select an available book and register the loan.
 
-## 3. Author Class
+## Project Structure
 
-- [x] Create the `Author` class with the attributes:
-  - [x] `id` (Unique identifier)
-  - [x] `name` (Author's name)
-  - [x] `dateOfBirth` (Author's date of birth)
+The project is divided into main classes to maintain organization. Here are the classes and their functionalities:
 
-## 4. Library Class
+### Main Classes
 
-- [x] Create the `Library` class with the following attributes:
-  - [x] List of books (`List<Book>`)
-- [x] Implement methods:
-  - [x] **Add book**: Method to add new books.
-  - [x] **List available books**: Show only books marked as "available."
-  - [x] **Loan a book**: Record a book loan, mark it as unavailable, and associate it with a user.
+- **Book**: Represents a book, containing attributes such as id, title, author, availability, and registration dates.
+- **Author**: Represents an author, containing attributes such as id, name, and date of birth.
+- **Library**: Manages the list of books and includes methods to add books, list available ones, and register loans.
 
-## 5. Book Management
+## Business Rules
 
-- [x] Define an initial set of books and authors directly in the class.
-- [x] Implement functionality to:
-  - [x] List all available books (only those that can be loaned).
-  - [x] Loan a book: the user selects by `id`, enters their name, and the book is marked as loaned.
-  - [x] Display a success message after the loan.
+- Check if the book is available before allowing a loan.
+- Do not allow a book that has already been loaned to be loaned again until the program ends.
 
-## 6. User Interaction (Loop)
+## Conclusion
 
-- [x] Implement a loop in the console that:
-  - [x] Asks the user if they want to see the available books.
-  - [x] If the user answers **YES**:
-    - [x] List available books.
-    - [x] Allow the user to choose the book's `id`.
-    - [x] Display a message confirming the loan.
-  - [x] If the user answers **NO**:
-    - [x] End the system with a closing message.
-
-## 7. Business Rules
-
-- [x] Check if the book is available before allowing a loan.
-- [x] Do not allow a book that has already been loaned to be loaned again until the program ends.
+This system provides a simple and efficient way to manage book loans in a library, allowing for an interactive experience for users and an organized structure for development.
