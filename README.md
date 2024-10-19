@@ -44,8 +44,8 @@
 
 ## 6. User Interaction (Loop)
 
-- [ ] Implement a loop in the console that:
-  - [ ] Asks the user if they want to see the available books.
+- [x] Implement a loop in the console that:
+  - [x] Asks the user if they want to see the available books.
   - [ ] If the user answers **YES**:
     - [ ] List available books.
     - [ ] Allow the user to choose the book's `id`.
