@@ -20,10 +20,10 @@
 
 ## 3. Author Class
 
-- [ ] Create the `Author` class with the attributes:
-  - [ ] `id` (Unique identifier)
-  - [ ] `name` (Author's name)
-  - [ ] `dateOfBirth` (Author's date of birth)
+- [x] Create the `Author` class with the attributes:
+  - [x] `id` (Unique identifier)
+  - [x] `name` (Author's name)
+  - [x] `dateOfBirth` (Author's date of birth)
 
 ## 4. Library Class
 
